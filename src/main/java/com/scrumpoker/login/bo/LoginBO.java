@@ -6,8 +6,8 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
-import com.scrumpoker.login.jpa.entity.UserEntity;
-import com.scrumpoker.login.jpa.repository.UserRepository;
+import com.scrumpoker.login.mdb.model.UserEntity;
+import com.scrumpoker.login.mdb.repository.UserRepository;
 import com.scrumpoker.login.utils.RandomString;
 import com.scrumpoker.login.vo.LoginUserVO;
 import com.scrumpoker.login.vo.SessionVO;

@@ -1,6 +1,7 @@
 package com.scrumpoker.login.utils;
 
-import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.ZoneOffset;
 import java.util.Random;
 
 // Java program generate a random AlphaNumeric String
@@ -15,7 +16,7 @@ public class RandomString {
     public static String getAlphaNumericString(int n)
     {
     	Random randomUtil = new Random();
-    	randomUtil.setSeed(LocalDate.now().toEpochDay());
+    	randomUtil.setSeed(LocalDateTime.now().toInstant(ZoneOffset.UTC).toEpochMilli());
         return Long.toString(randomUtil.nextLong());
     }
 }
